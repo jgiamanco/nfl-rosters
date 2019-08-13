@@ -4,7 +4,7 @@ import Card from './Card.js';
 
 const CardList = ({team}) => {
     return (
-        <div>
+        <div className="card-container">
             {
                 team.map((player, i) => {
                     return (

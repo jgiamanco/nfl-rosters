@@ -16,6 +16,10 @@ body {
     margin: 0 auto !important;
 }
 
+.card-container {
+    margin: 0 0 0 5px;
+}
+
 .scroll {
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
