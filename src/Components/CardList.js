@@ -2,17 +2,18 @@ import React from 'react';
 import Card from './Card.js';
 
 
-const CardList = ({robots}) => {
+const CardList = ({team}) => {
     return (
         <div>
             {
-                robots.map((user, i) => {
+                team.map((player, i) => {
                     return (
                         <Card 
                             key={i}
-                            id={robots[i].id} 
-                            name={robots[i].name} 
-                            email={robots[i].email} 
+                            id={team[i].PhotoUrl !== "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nfl/low-res/0.png" ? team[i].PlayerID : 0} 
+                            name={team[i].Name} 
+                            position={team[i].Position}
+                            years={team[i].Experience} 
                         />
                     );        
                 })

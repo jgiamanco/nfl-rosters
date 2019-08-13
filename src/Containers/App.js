@@ -2,21 +2,25 @@ import React, { Component } from 'react';
 import CardList from '../Components/CardList.js';
 import SearchBox from '../Components/SearchBox.js';
 import Scroll from '../Components/Scroll.js';
+import DropdownTeamSelection from '../Components/DropdownTeamSelection';
 import './App.css';
 
+
 class App extends Component {
-    constructor() {
+    constructor(props) {
         super()
         this.state = {
-            robots: [],
-            searchfield: ''
+            team: [],
+            searchfield: '',
+            selected: 'lac'
         }
     }
 
+
     componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch(`https://api.sportsdata.io/v3/nfl/scores/json/Players/${this.state.selected}?key=680357673cd14ef28c1bd63359aa9c48`)
         .then(response => response.json())
-        .then(users => this.setState({ robots: users}));
+        .then(players => this.setState({ team: players}));
     }
 
     onSearchChange = (event) => {
@@ -24,18 +28,22 @@ class App extends Component {
     }
 
     render() {
-        const { robots, searchfield } = this.state;
-        const filteredRobots = robots.filter(robot => {
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+        const { team, searchfield } = this.state;
+        const filteredPlayers = team.filter(player => {
+            return player.Name.toLowerCase().includes(searchfield.toLowerCase());
         })
-        return !robots.length ? 
-        <h1>Loading . . .</h1> : 
+        return !team.length ? 
+            <div className='tc'>
+                <h1 className='f1'>NFL Rosters</h1>
+                <DropdownTeamSelection />
+            </div> : 
         (
             <div className='tc'>
-                <h1 className='f1'>RoboFriends</h1>
+                <h1 className='f1'>NFL Rosters</h1>
+                <DropdownTeamSelection />
                 <SearchBox searchChange={this.onSearchChange}/>
                 <Scroll>
-                    <CardList robots={filteredRobots}/>
+                    <CardList team={filteredPlayers}/>
                 </Scroll>
             </div>
         );
