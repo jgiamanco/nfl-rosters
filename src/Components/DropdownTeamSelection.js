@@ -318,6 +318,7 @@ export default class DropdownTeamSelection extends React.Component {
     return (
       <div>
         <Dropdown
+          className="w-20"
           button
           fluid
           options={teamOptions}
