@@ -14,6 +14,7 @@ const CardList = ({team}) => {
                             name={team[i].Name} 
                             position={team[i].Position}
                             years={team[i].Experience} 
+                            number={team[i].Number}
                         />
                     );        
                 })

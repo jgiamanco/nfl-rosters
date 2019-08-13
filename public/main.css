@@ -2,14 +2,38 @@ body {
     background-image: url(https://wallpaperplay.com/walls/full/e/9/4/317644.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center; 
     height: 100vh;
     overflow: hidden;
     margin-top: 50px;
 }
 
+.scroll {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    height: 75vh;
+}
+
 h1.f1 {
-    margin: 28px auto;
+    margin: 20px auto 10px auto;
     color: white;
+}
+
+.num {
+    margin: 0 200px 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+div.card p {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.bg-color {
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .ui.fluid.dropdown {
@@ -30,4 +54,9 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.card {
+    width: 290px;
+    height: 300px;
 }

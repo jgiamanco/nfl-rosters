@@ -82,7 +82,7 @@ export const chargers = [
         "LastName":"Long",
         "Position":"K",
         "Status":"Active",
-        "Height":"6'2"",
+        "Height":"6'2\"",
         "Weight":205,
         "BirthDate":"1993-04-06T00:00:00",
         "College":"UAB",
