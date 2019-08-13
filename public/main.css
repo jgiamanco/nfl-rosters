@@ -1,7 +1,6 @@
 body {
     background-image: url(https://wallpaperplay.com/walls/full/e/9/4/317644.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     height: 100vh;
     overflow: hidden;
@@ -9,5 +8,26 @@ body {
 }
 
 h1.f1 {
+    margin: 28px auto;
     color: white;
+}
+
+.ui.fluid.dropdown {
+    display: block;
+    width: 20vw;
+    margin: 8px 0 auto auto;
+}
+
+input[type=email], input[type=password], input[type=search], input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20vw;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

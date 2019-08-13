@@ -47,10 +47,12 @@ class App extends Component {
     ) : (
       <div className="tc">
         <h1 className="f1">NFL Rosters</h1>
-        <DropdownTeamSelection
-          onDropDownChange={team => this.onDropDownChange(team)}
-        />
-        <SearchBox searchChange={this.onSearchChange} />
+        <div className="inputs">
+          <DropdownTeamSelection
+            onDropDownChange={team => this.onDropDownChange(team)}
+          />
+          <SearchBox searchChange={this.onSearchChange} />
+        </div>  
         <Scroll>
           <CardList team={filteredPlayers} />
         </Scroll>
