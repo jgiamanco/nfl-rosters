@@ -1,8 +1,8 @@
 {
-  "name": "robofriends",
+  "name": "nfl-rosters",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jgiamanco.github.io/robofriend-app",
+  "homepage": "https://jgiamanco.github.io/nfl-rosters",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
