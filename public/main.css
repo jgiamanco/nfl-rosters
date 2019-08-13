@@ -1,10 +1,19 @@
+@media only screen and (max-width: 527.5px) {
+    .inputs {
+        flex-direction: column;
+    }
+  }
+
+
 body {
     background-image: url(https://wallpaperplay.com/walls/full/e/9/4/317644.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; 
     height: 100vh;
+    max-width: 1440px;
     overflow: hidden;
+    margin: 0 auto !important;
 }
 
 .scroll {
@@ -23,20 +32,16 @@ h1.f1 {
 }
 
 .num {
-    margin: 0 200px 0 auto;
+    text-align-last: start;
 }
 
 h2 {
-    font-size: 1.5rem;
-}
-
-.logo {
-    width: 6rem;
+    font-size: 1.25rem;
 }
 
 div.card p {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .bg-color {
@@ -64,6 +69,6 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
 }
 
 .card {
-    width: 290px;
-    height: 300px;
+    width: 245px;
+    height: 275px;
 }
