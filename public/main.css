@@ -19,7 +19,7 @@ body {
 .scroll {
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
-    height: 75vh;
+    height: 70vh;
 }
 
 .center {
