@@ -14,9 +14,9 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.doTeamFetch("lac");
-  }
+  // componentDidMount() {
+  //   this.doTeamFetch("lac");
+  // }
 
   onSearchChange = event => {
     this.setState({ searchfield: event.target.value });
@@ -42,7 +42,11 @@ class App extends Component {
     return !team.length ? (
       <div className="tc">
         <h1 className="f1">NFL Rosters</h1>
-        <DropdownTeamSelection />
+        <div className="center">
+          <DropdownTeamSelection
+            onDropDownChange={team => this.onDropDownChange(team)}
+          />
+        </div>  
       </div>
     ) : (
       <div className="tc">
