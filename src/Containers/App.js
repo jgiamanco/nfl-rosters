@@ -26,6 +26,7 @@ class App extends Component {
   };
 
   doTeamFetch(team) {
+    console.log(NFL_API_KEY);
     fetch(
       `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=${NFL_API_KEY}`
     )
