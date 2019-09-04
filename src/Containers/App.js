@@ -5,6 +5,8 @@ import Scroll from "../Components/Scroll.js";
 import DropdownTeamSelection from "../Components/DropdownTeamSelection";
 import "./App.css";
 
+const NFL_API_KEY = process.env.NFL_API_KEY;
+
 class App extends Component {
   constructor(props) {
     super();
@@ -13,6 +15,7 @@ class App extends Component {
       searchfield: ""
     };
   }
+  
 
   // componentDidMount() {
   //   this.doTeamFetch("lac");
@@ -24,7 +27,7 @@ class App extends Component {
 
   doTeamFetch(team) {
     fetch(
-      `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=680357673cd14ef28c1bd63359aa9c48`
+      `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=${NFL_API_KEY}`
     )
       .then(response => response.json())
       .then(players => this.setState({ team: players }));
