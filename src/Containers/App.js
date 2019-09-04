@@ -11,7 +11,8 @@ class App extends Component {
     super();
     this.state = {
       team: [],
-      searchfield: ""
+      searchfield: "",
+      API_KEY: process.env.NFL_API_KEY
     };
   }
   
@@ -26,7 +27,7 @@ class App extends Component {
 
   doTeamFetch(team) {
     fetch(
-      `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=${process.env.NFL_API_KEY}`
+      `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=${this.state.API_KEY}`
     )
       .then(response => response.json())
       .then(players => this.setState({ team: players }));
