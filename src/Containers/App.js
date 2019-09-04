@@ -4,7 +4,7 @@ import SearchBox from "../Components/SearchBox.js";
 import Scroll from "../Components/Scroll.js";
 import DropdownTeamSelection from "../Components/DropdownTeamSelection";
 import "./App.css";
-
+const API_KEY = '680357673cd14ef28c1bd63359aa9c48';
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +12,6 @@ class App extends Component {
     this.state = {
       team: [],
       searchfield: "",
-      API_KEY: process.env.NFL_API_KEY
     };
   }
   
@@ -27,7 +26,7 @@ class App extends Component {
 
   doTeamFetch(team) {
     fetch(
-      `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=${this.state.API_KEY}`
+      `https://api.sportsdata.io/v3/nfl/scores/json/Players/${team}?key=${API_KEY}`
     )
       .then(response => response.json())
       .then(players => this.setState({ team: players }));
