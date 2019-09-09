@@ -4,7 +4,7 @@ import SearchBox from "../Components/SearchBox.js";
 import Scroll from "../Components/Scroll.js";
 import DropdownTeamSelection from "../Components/DropdownTeamSelection";
 import "./App.css";
-const API_KEY = '680357673cd14ef28c1bd63359aa9c48';
+const API_KEY = process.env.REACT_APP_NFL_API_KEY;
 
 class App extends Component {
   constructor(props) {
