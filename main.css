@@ -1,0 +1,78 @@
+@media only screen and (max-width: 527.5px) {
+    .inputs {
+        flex-direction: column;
+    }
+  }
+
+
+body {
+    background-image: url(https://wallpaperplay.com/walls/full/e/9/4/317644.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    height: 100vh;
+    max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto !important;
+}
+
+.card-container {
+    margin: 0 0 0 5px;
+}
+
+.scroll {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+h1.f1 {
+    margin: 20px auto 10px auto;
+    color: white;
+}
+
+.num {
+    text-align-last: start;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+div.card p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.bg-color {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.ui.fluid.dropdown {
+    display: block;
+    width: 225px;
+    margin: 7px auto 0 auto;
+}
+
+input[type=email], input[type=password], input[type=search], input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 225px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    width: 245px;
+    height: 275px;
+}
