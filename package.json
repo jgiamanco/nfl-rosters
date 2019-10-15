@@ -2,7 +2,7 @@
   "name": "nfl-rosters",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jgiamanco.github.io/nfl-rosters",
+  "homepage": "https://nflrosters.netlify.com",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
