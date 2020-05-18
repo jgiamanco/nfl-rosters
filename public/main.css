@@ -2,7 +2,7 @@
     .inputs {
         flex-direction: column;
     }
-  }
+}
 
 
 body {
@@ -83,7 +83,6 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
 .flip-container {
     background-color: transparent;
     perspective: 1000px;
-    width: 21vw;
 }
 
 .flip-inner {
