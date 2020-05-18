@@ -102,6 +102,7 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
     overflow: hidden;
     display: inline-block;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     justify-content: center;
     align-items: center;
 }
