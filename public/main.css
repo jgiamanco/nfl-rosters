@@ -110,7 +110,7 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
 .flip-front {
     transform: rotateY(0deg);
     z-index: 2;
-    position: fixed;
+    position: absolute;
 }
 
 .flip-back {
