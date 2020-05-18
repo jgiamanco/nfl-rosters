@@ -15,6 +15,10 @@ const CardList = ({team}) => {
                             position={team[i].Position}
                             years={team[i].ExperienceString} 
                             number={team[i].Number}
+                            height={team[i].Height}
+                            weight={team[i].Weight}
+                            age={team[i].Age}
+                            college={team[i].College}
                         />
                     );        
                 })

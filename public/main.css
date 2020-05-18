@@ -18,6 +18,9 @@ body {
 
 .card-container {
     margin: 0 0 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .scroll {
@@ -75,4 +78,43 @@ input[type=email], input[type=password], input[type=search], input[type=text] {
 .card {
     width: 245px;
     height: 275px;
+}
+
+.flip-container {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 21vw;
+}
+
+.flip-inner {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    transition: .6s .1s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    overflow: hidden;
+    display: inline-block;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-front {
+    transform: rotateY(0deg);
+    z-index: 2;
+    position: fixed;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    text-align-last: left;
 }
