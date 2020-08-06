@@ -147,6 +147,15 @@ const teamOptions = [
     }
   },
   {
+    key: "Las Vegas Raiders",
+    text: "Las Vegas Raiders",
+    value: "LV",
+    image: {
+      avatar: true,
+      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LV.svg"
+    }
+  },
+  {
     key: "Los Angeles Chargers",
     text: "Los Angeles Chargers",
     value: "lac",
@@ -216,15 +225,6 @@ const teamOptions = [
     image: {
       avatar: true,
       src: "https://static.nfl.com/static/site/img/logos/svg/teams/NYJ.svg"
-    }
-  },
-  {
-    key: "Oakland Raiders",
-    text: "Oakland Raiders",
-    value: "oak",
-    image: {
-      avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/OAK.svg"
     }
   },
   {
