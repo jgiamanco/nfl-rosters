@@ -282,8 +282,8 @@ const teamOptions = [
     }
   },
   {
-    key: "Washington Redskins",
-    text: "Washington Redskins",
+    key: "Washington Football Team",
+    text: "Washington Football Team",
     value: "was",
     image: {
       avatar: true,
