@@ -8,7 +8,7 @@ const teamOptions = [
     value: "ari",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/ARI.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/ARI.svg"
     }
   },
   {
@@ -17,7 +17,7 @@ const teamOptions = [
     value: "atl",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/ATL.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/ATL.svg"
     }
   },
   {
@@ -26,7 +26,7 @@ const teamOptions = [
     value: "bal",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/BAL.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/BAL.svg"
     }
   },
   {
@@ -35,7 +35,7 @@ const teamOptions = [
     value: "buf",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/BUF.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/BUF.svg"
     }
   },
   {
@@ -44,7 +44,7 @@ const teamOptions = [
     value: "car",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CAR.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CAR.svg"
     }
   },
   {
@@ -53,7 +53,7 @@ const teamOptions = [
     value: "chi",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CHI.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CHI.svg"
     }
   },
   {
@@ -62,7 +62,7 @@ const teamOptions = [
     value: "cin",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CIN.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CIN.svg"
     }
   },
   {
@@ -71,7 +71,7 @@ const teamOptions = [
     value: "cle",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CLE.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CLE.svg"
     }
   },
   {
@@ -80,7 +80,7 @@ const teamOptions = [
     value: "dal",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/DAL.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/DAL.svg"
     }
   },
   {
@@ -89,7 +89,7 @@ const teamOptions = [
     value: "den",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/DEN.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/DEN.svg"
     }
   },
   {
@@ -98,7 +98,7 @@ const teamOptions = [
     value: "det",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/DET.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/DET.svg"
     }
   },
   {
@@ -107,7 +107,7 @@ const teamOptions = [
     value: "gb",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/GB.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/GB.svg"
     }
   },
   {
@@ -116,7 +116,7 @@ const teamOptions = [
     value: "hou",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/HOU.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/HOU.svg"
     }
   },
   {
@@ -125,7 +125,7 @@ const teamOptions = [
     value: "ind",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/IND.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/IND.svg"
     }
   },
   {
@@ -134,7 +134,7 @@ const teamOptions = [
     value: "jax",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/JAX.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/JAX.svg"
     }
   },
   {
@@ -143,7 +143,7 @@ const teamOptions = [
     value: "kc",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/KC.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/KC.svg"
     }
   },
   {
@@ -152,7 +152,7 @@ const teamOptions = [
     value: "LV",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LV.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/LV.svg"
     }
   },
   {
@@ -161,7 +161,7 @@ const teamOptions = [
     value: "lac",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LAC.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/LAC.svg"
     }
   },
   {
@@ -170,7 +170,7 @@ const teamOptions = [
     value: "lar",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LA.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/LA.svg"
     }
   },
   {
@@ -179,7 +179,7 @@ const teamOptions = [
     value: "mia",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/MIA.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/MIA.svg"
     }
   },
   {
@@ -188,7 +188,7 @@ const teamOptions = [
     value: "min",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/MIN.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/MIN.svg"
     }
   },
   {
@@ -197,7 +197,7 @@ const teamOptions = [
     value: "ne",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NE.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NE.svg"
     }
   },
   {
@@ -206,7 +206,7 @@ const teamOptions = [
     value: "no",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NO.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NO.svg"
     }
   },
   {
@@ -215,7 +215,7 @@ const teamOptions = [
     value: "nyg",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NYG.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NYG.svg"
     }
   },
   {
@@ -224,7 +224,7 @@ const teamOptions = [
     value: "nyj",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NYJ.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NYJ.svg"
     }
   },
   {
@@ -233,7 +233,7 @@ const teamOptions = [
     value: "phi",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/PHI.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/PHI.svg"
     }
   },
   {
@@ -242,7 +242,7 @@ const teamOptions = [
     value: "pit",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/PIT.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/PIT.svg"
     }
   },
   {
@@ -251,7 +251,7 @@ const teamOptions = [
     value: "sf",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/SF.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/SF.svg"
     }
   },
   {
@@ -260,7 +260,7 @@ const teamOptions = [
     value: "sea",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/SEA.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/SEA.svg"
     }
   },
   {
@@ -269,7 +269,7 @@ const teamOptions = [
     value: "tb",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/TB.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/TB.svg"
     }
   },
   {
@@ -278,7 +278,7 @@ const teamOptions = [
     value: "ten",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/TEN.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/TEN.svg"
     }
   },
   {
@@ -287,7 +287,7 @@ const teamOptions = [
     value: "was",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/WAS.svg"
+      src: "https://static.www.nfl.com/league/api/clubs/logos/WAS.svg"
     }
   }
 ];
