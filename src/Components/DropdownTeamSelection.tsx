@@ -1,15 +1,22 @@
 import React from "react";
-import { Dropdown } from "semantic-ui-react";
+import Dropdown from "./Dropdown";
 
-const teamOptions = [
+interface TeamOption {
+  key: string;
+  text: string;
+  value: string;
+  image: { avatar: boolean; src: string };
+}
+
+const teamOptions: TeamOption[] = [
   {
     key: "Arizona Cardinals",
     text: "Arizona Cardinals",
     value: "ari",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/ARI.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/ARI.svg",
+    },
   },
   {
     key: "Atlanta Falcons",
@@ -17,8 +24,8 @@ const teamOptions = [
     value: "atl",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/ATL.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/ATL.svg",
+    },
   },
   {
     key: "Baltimore Ravens",
@@ -26,8 +33,8 @@ const teamOptions = [
     value: "bal",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/BAL.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/BAL.svg",
+    },
   },
   {
     key: "Buffalo Bills",
@@ -35,8 +42,8 @@ const teamOptions = [
     value: "buf",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/BUF.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/BUF.svg",
+    },
   },
   {
     key: "Carolina Panthers",
@@ -44,8 +51,8 @@ const teamOptions = [
     value: "car",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CAR.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CAR.svg",
+    },
   },
   {
     key: "Chicago Bears",
@@ -53,8 +60,8 @@ const teamOptions = [
     value: "chi",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CHI.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CHI.svg",
+    },
   },
   {
     key: "Cincinnati Bengals",
@@ -62,8 +69,8 @@ const teamOptions = [
     value: "cin",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CIN.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CIN.svg",
+    },
   },
   {
     key: "Cleveland Browns",
@@ -71,8 +78,8 @@ const teamOptions = [
     value: "cle",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/CLE.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/CLE.svg",
+    },
   },
   {
     key: "Dallas Cowboys",
@@ -80,8 +87,8 @@ const teamOptions = [
     value: "dal",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/DAL.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/DAL.svg",
+    },
   },
   {
     key: "Denver Broncos",
@@ -89,8 +96,8 @@ const teamOptions = [
     value: "den",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/DEN.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/DEN.svg",
+    },
   },
   {
     key: "Detroit Lions",
@@ -98,8 +105,8 @@ const teamOptions = [
     value: "det",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/DET.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/DET.svg",
+    },
   },
   {
     key: "Green Bay Packers",
@@ -107,8 +114,8 @@ const teamOptions = [
     value: "gb",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/GB.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/GB.svg",
+    },
   },
   {
     key: "Houston Texans",
@@ -116,8 +123,8 @@ const teamOptions = [
     value: "hou",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/HOU.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/HOU.svg",
+    },
   },
   {
     key: "Indianapolis Colts",
@@ -125,8 +132,8 @@ const teamOptions = [
     value: "ind",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/IND.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/IND.svg",
+    },
   },
   {
     key: "Jacksonville Jaguars",
@@ -134,8 +141,8 @@ const teamOptions = [
     value: "jax",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/JAX.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/JAX.svg",
+    },
   },
   {
     key: "Kansas City Chiefs",
@@ -143,8 +150,8 @@ const teamOptions = [
     value: "kc",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/KC.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/KC.svg",
+    },
   },
   {
     key: "Las Vegas Raiders",
@@ -152,8 +159,8 @@ const teamOptions = [
     value: "LV",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LV.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/LV.svg",
+    },
   },
   {
     key: "Los Angeles Chargers",
@@ -161,8 +168,8 @@ const teamOptions = [
     value: "lac",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LAC.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/LAC.svg",
+    },
   },
   {
     key: "Los Angeles Rams",
@@ -170,8 +177,8 @@ const teamOptions = [
     value: "lar",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/LA.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/LA.svg",
+    },
   },
   {
     key: "Miami Dolphins",
@@ -179,8 +186,8 @@ const teamOptions = [
     value: "mia",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/MIA.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/MIA.svg",
+    },
   },
   {
     key: "Minnesota Vikings",
@@ -188,8 +195,8 @@ const teamOptions = [
     value: "min",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/MIN.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/MIN.svg",
+    },
   },
   {
     key: "New England Patriots",
@@ -197,8 +204,8 @@ const teamOptions = [
     value: "ne",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NE.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NE.svg",
+    },
   },
   {
     key: "New Orleans Saints",
@@ -206,8 +213,8 @@ const teamOptions = [
     value: "no",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NO.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NO.svg",
+    },
   },
   {
     key: "New York Giants",
@@ -215,8 +222,8 @@ const teamOptions = [
     value: "nyg",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NYG.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NYG.svg",
+    },
   },
   {
     key: "New York Jets",
@@ -224,8 +231,8 @@ const teamOptions = [
     value: "nyj",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/NYJ.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/NYJ.svg",
+    },
   },
   {
     key: "Philadelphia Eagles",
@@ -233,8 +240,8 @@ const teamOptions = [
     value: "phi",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/PHI.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/PHI.svg",
+    },
   },
   {
     key: "Pittsburgh Steelers",
@@ -242,8 +249,8 @@ const teamOptions = [
     value: "pit",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/PIT.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/PIT.svg",
+    },
   },
   {
     key: "San Francisco 49ers",
@@ -251,8 +258,8 @@ const teamOptions = [
     value: "sf",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/SF.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/SF.svg",
+    },
   },
   {
     key: "Seattle Seahawks",
@@ -260,8 +267,8 @@ const teamOptions = [
     value: "sea",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/SEA.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/SEA.svg",
+    },
   },
   {
     key: "Tampa Bay Buccaneers",
@@ -269,8 +276,8 @@ const teamOptions = [
     value: "tb",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/TB.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/TB.svg",
+    },
   },
   {
     key: "Tennessee Titans",
@@ -278,8 +285,8 @@ const teamOptions = [
     value: "ten",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/TEN.svg"
-    }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/TEN.svg",
+    },
   },
   {
     key: "Washington Redskins",
@@ -287,50 +294,25 @@ const teamOptions = [
     value: "was",
     image: {
       avatar: true,
-      src: "https://static.nfl.com/static/site/img/logos/svg/teams/WAS.svg"
-    }
-  }
+      src: "https://static.www.nfl.com/league/api/clubs/logos/WAS.svg",
+    },
+  },
 ];
 
-export default class DropdownTeamSelection extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchQuery: "",
-      selected: null
-    };
-  }
-
-  onChange = (e, data) => {
-    const { onDropDownChange } = this.props;
-    this.setState({ selected: data.value }, () =>
-      onDropDownChange(this.state.selected)
-    );
-  };
-
-  onSearchChange = (e, data) => {
-    console.log(data.searchQuery);
-    this.setState({ searchQuery: data.searchQuery });
-  };
-
-  render() {
-    const { searchQuery, selected } = this.state;
-    return (
-      <div>
-        <Dropdown
-          className="w-20"
-          button
-          fluid
-          options={teamOptions}
-          placeholder="Select Team"
-          search
-          text={searchQuery}
-          searchQuery={searchQuery}
-          value={selected}
-          onChange={this.onChange}
-          onSearchChange={this.onSearchChange}
-        />
-      </div>
-    );
-  }
+interface DropdownTeamSelectionProps {
+  onDropDownChange: (team: string) => void;
 }
+
+const DropdownTeamSelection: React.FC<DropdownTeamSelectionProps> = ({
+  onDropDownChange,
+}) => {
+  return (
+    <Dropdown
+      options={teamOptions}
+      placeholder="Select Team"
+      onChange={onDropDownChange}
+    />
+  );
+};
+
+export default DropdownTeamSelection;

@@ -1,0 +1,80 @@
+.ui.fluid.dropdown {
+  display: block;
+  width: 225px;
+  margin: 7px auto 0 auto;
+  position: relative;
+}
+
+.ui.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.ui.button:hover {
+  background-color: #f0f0f0;
+}
+
+.ui.search.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1000;
+  display: none;
+}
+
+.ui.search.dropdown.active.visible .dropdown-menu {
+  display: block;
+  overflow-y: auto;
+  max-height: 50vh;
+}
+
+.ui.search.dropdown .dropdown-search {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.ui.search.dropdown .dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ui.search.dropdown .dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+.ui.search.dropdown .dropdown-avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.ui.search.dropdown .dropdown-arrow {
+  margin-left: 10px;
+}
+
+.mrauto {
+  margin-right: auto;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  height: 70vh;
+}
