@@ -82,6 +82,7 @@
 .footer {
   text-align: center;
   padding: 10px;
+  background-color: black;
   position: fixed;
   bottom: 0;
   width: 100%;
