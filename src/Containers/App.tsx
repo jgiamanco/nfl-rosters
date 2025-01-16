@@ -3,6 +3,7 @@ import CardList from "../Components/CardList";
 import SearchBox from "../Components/SearchBox";
 import Scroll from "../Components/Scroll";
 import DropdownTeamSelection from "../Components/DropdownTeamSelection";
+import Footer from "../Components/Footer";
 import "./App.css";
 
 const API_KEY = process.env.REACT_APP_NFL_API_KEY;
@@ -101,6 +102,7 @@ class App extends Component<{}, AppState> {
         <div className="center">
           <DropdownTeamSelection onDropDownChange={this.onDropDownChange} />
         </div>
+        <Footer />
       </div>
     ) : (
       <div className="tc">
@@ -112,6 +114,7 @@ class App extends Component<{}, AppState> {
         <Scroll>
           <CardList team={filteredPlayers} />
         </Scroll>
+        <Footer />
       </div>
     );
   }
